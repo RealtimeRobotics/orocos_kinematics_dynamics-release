@@ -1,3 +1,10 @@
+ros-foxy-orocos-kdl (3.3.2-3focal) focal; urgency=medium
+
+  * edit debian/rules: let dh_auto_test failure propagate
+  * update debian/control
+
+ -- Neil Roza <neil@rtr.ai>  Fri, 07 Jan 2022 20:24:07 +0000
+
 ros-foxy-orocos-kdl (3.3.2-2focal) focal; urgency=medium
 
   * update debian/gbp.conf
