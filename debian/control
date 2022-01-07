@@ -2,11 +2,32 @@ Source: ros-foxy-orocos-kdl
 Section: misc
 Priority: optional
 Maintainer: Jacob Perron <jacob@openrobotics.org>
-Build-Depends: debhelper (>= 9.0.0), cmake, libcppunit-dev, libeigen3-dev, ros-foxy-eigen3-cmake-module, ros-foxy-ros-workspace
+Uploaders:
+ Neil Roza <neil@rtr.ai>,
+ Xianchao Long <xlong@rtr.ai>,
+Build-Depends:
+ cmake,
+ debhelper-compat (= 13),
+ libcppunit-dev,
+ libeigen3-dev,
+ ros-foxy-eigen3-cmake-module,
+ ros-foxy-ros-workspace,
+Standards-Version: 4.4.1
 Homepage: http://wiki.ros.org/orocos_kdl
-Standards-Version: 3.9.2
+Vcs-Browser: https://github.com/RealtimeRobotics/orocos_kinematics_dynamics-release
+Vcs-Git: https://github.com/RealtimeRobotics/orocos_kinematics_dynamics-release.git
 
 Package: ros-foxy-orocos-kdl
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, pkg-config, ros-foxy-eigen3-cmake-module, ros-foxy-ros-workspace
-Description: This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libeigen3-dev,
+ pkg-config,
+ ros-foxy-eigen3-cmake-module,
+ ros-foxy-ros-workspace,
+Description: orocos kinematics and dynamics library
+ This package contains a recent version of the Kinematics and Dynamics Library
+ (KDL), distributed by the Orocos Project.
+ .
+ This package includes patches by Realtime Robotics Inc.
